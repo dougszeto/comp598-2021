@@ -19,7 +19,7 @@ def collect_newest_posts(subreddit_title):
     root_element = r.json()
     posts = root_element['data']['children']
 
-    newest_posts = posts[0:101]
+    newest_posts = posts[0:100]
     for index, post in enumerate(newest_posts):
         newest_posts[index] = json.dumps(post)
     print(f'\tretrieved {len(newest_posts)} posts from {subreddit_title}')

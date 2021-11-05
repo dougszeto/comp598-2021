@@ -15,7 +15,7 @@ def main():
             num_posts += 1
     
     avg_title_length = sum_title_lengths / num_posts
-    print(f'The average title length for posts in {input_file} is {avg_title_length} characters')
+    print(avg_title_length)
 
 if __name__ == '__main__':
     main()
